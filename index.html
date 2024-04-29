@@ -30,7 +30,6 @@
 
     body {
       background: wheat;
-      /* background-image: url("https://wallpaper.dog/large/10871886.png"); */
       background-image: linear-gradient(#ff71c0, #b983ff, #5aaeff);
       background-position: center;
       background-size: cover;
@@ -54,7 +53,6 @@
     }
 
     .open h2 {
-      /* margin: 0 30px; */
       margin-bottom: 20px;
       color: rgb(56, 56, 56);
       text-align: center;
@@ -186,9 +184,10 @@
   </p>
 
   <script>
-
-    var musik = "./Kenny G - The Moment (Official Video).mp3";
-
+    function mulai() {
+      alert('Tombol diklik!');
+      // Tambahkan kode untuk memulai sesuatu di sini
+    }
   </script>
   <script> AOS.init({once: true, });</script>
   <script> var audio = document.querySelector(".audio"); if (musik) {audio.src = musik;} function mulai() {audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () {document.querySelector(".open").style.display = "none";}, 1000);} function wa(isi) {window.open("https://api.whatsapp.com/send?text= Sayang, " + isi);} async function tanya() {var {value: kado} = await swal.fire({title: "aku mau ngucapin ...", input: "text", showCancelButton: false, }); if (kado) {await swal.fire("Kirim jawabannya ke wa aku ya"); wa(kado);} else {await swal.fire("Jangan dikosongin dong"); tanya();} }</script>
